@@ -1,10 +1,10 @@
-# 🌐 [Your Name]'s Portfolio
+# 🌐 Anil Ozsoy's Portfolio Site
 
 Welcome to the digital playground of Anil Ozsoy, a passionate Frontend Developer and experienced UX/UI Designer dedicated to crafting seamless digital experiences. Here, you'll find a collection of my work that showcases my journey, skills, and dedication to design and development. 🚀
 
 ## About Me
 
-Hi there! I'm [Your Name], and I've been weaving the web with code and design for over [X] years. With a keen eye for design and a coder's logic, I create user-centric digital experiences that are both intuitive and engaging. 🎨💻
+Hi there! I'm Anil, and I've been weaving the web with code and design for over 10 years. With a keen eye for design and a coder's logic, I create user-centric digital experiences that are both intuitive and engaging. 🎨💻
 
 ### What I Do
 
