@@ -53,5 +53,7 @@ export default function CanvasBackground() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} width={32} height={32} />;
+  return (
+    <canvas className=" w-full h-full" ref={canvasRef} width={32} height={32} />
+  );
 }

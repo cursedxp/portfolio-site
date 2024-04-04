@@ -1,4 +1,4 @@
-import CanvasBackground from "./components/CanvasBackground";
+import CanvasBackground from "./components/CanvasBackground/CanvasBackground";
 
 function App() {
   return (
