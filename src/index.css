@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.typed-cursor {
+  color: #3599f6;
+}
