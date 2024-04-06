@@ -31,8 +31,8 @@ export default function BallAnimation() {
           this.x,
           this.y,
           10,
-          this.x + 10,
-          this.y + 10,
+          this.x,
+          this.y,
           this.radius
         );
         gradient.addColorStop(0, this.colorOne);
@@ -63,7 +63,7 @@ export default function BallAnimation() {
     const circles = [
       new Circle(100, 100, 64, "rgb(255,226,132)", "rgb(220,168,0)", 2, 2),
       new Circle(200, 300, 48, "rgb(255,143,215)", "rgb(233,94,183)", 3, 3),
-      new Circle(400, 200, 32, "rgb(183,220,255)", "rgb(53,153,246)", 4, 4),
+      new Circle(500, 200, 32, "rgb(155,207,255)", "rgb(53,153,246)", 4, 4),
     ];
 
     function animate() {
@@ -86,7 +86,7 @@ export default function BallAnimation() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute top-0 left-0 w-full h-full z-20"
+      className="absolute top-0 left-0 w-full h-full z-10"
     ></canvas>
   );
 }
