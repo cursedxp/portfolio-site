@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe/AboutMe";
+import BallAnimation from "./components/BallAnimation/BallAnimation";
 import CanvasBackground from "./components/CanvasBackground/CanvasBackground";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -7,7 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <CanvasBackground />
+      <div className="relative w-full h-screen">
+        <CanvasBackground />
+        <BallAnimation />
+      </div>
+
       <Hero />
       <AboutMe />
       <Skills />
