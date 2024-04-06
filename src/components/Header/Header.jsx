@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className=" z-10 fixed top-0 left-0 flex justify-between w-full p-4 text-lg">
+    <header className=" z-50 fixed top-0 left-0 flex justify-between w-full p-4 text-lg">
       <div>
         Anil Ozsoy
         <span>Software Developer/UX Designer</span>
