@@ -41,7 +41,7 @@ export default function CanvasBackground() {
         }
       }
 
-      time += 0.01;
+      time += 0.02;
       animationFrameId = requestAnimationFrame(runAnimation);
     };
 
@@ -54,6 +54,11 @@ export default function CanvasBackground() {
   }, []);
 
   return (
-    <canvas className=" w-full h-full" ref={canvasRef} width={32} height={32} />
+    <canvas
+      ref={canvasRef}
+      className="w-absolute top-0 left-0 w-full h-full z-10"
+      width={32}
+      height={32}
+    />
   );
 }
