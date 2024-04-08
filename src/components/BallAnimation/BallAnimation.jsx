@@ -4,18 +4,16 @@ export default function BallAnimation() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    // Correctly using the ref to get the canvas element
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
     context.imageSmoothingEnabled = true;
 
-    // Adjusting to fill the entire parent div size
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
     window.addEventListener("resize", resizeCanvas);
-    resizeCanvas(); // Initial resize to ensure correct dimensions
+    resizeCanvas();
 
     function Circle(x, y, radius, colorOne, colorTwo, vx, vy) {
       this.x = x;
@@ -43,7 +41,7 @@ export default function BallAnimation() {
         context.fillStyle = gradient;
         context.fill();
       };
-
+      // Update the position of the circle
       this.update = function () {
         if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
           this.vx = -this.vx;
