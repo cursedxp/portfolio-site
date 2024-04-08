@@ -25,7 +25,7 @@ export default function AnimatedHeroText() {
 
   return (
     <div className=" text-left ml-10">
-      <span style={{ color: "#3599F6" }} ref={el} />
+      <span className=" text-blue-500" ref={el} />
     </div>
   );
 }
