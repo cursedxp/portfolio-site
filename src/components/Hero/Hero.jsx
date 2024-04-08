@@ -1,17 +1,23 @@
+import CanvasBackground from "../CanvasBackground/CanvasBackground";
+import BallAnimation from "../BallAnimation/BallAnimation";
+import AnimatedHeroText from "../AnimatedHeroText/AnimatedHeroText";
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h2 className="text-4xl">
-        Anil <span>Frontend Developer / UX Designer</span>
-      </h2>
-      <p className="text-lg">
-        Based in Germany, I have nurtured a deep passion for crafting beautiful
-        and intuitive digital experiences. As a full-stack developer and user
-        experience designer, I specialize in React, NextJS MongoDB, Node,
-        ExpressJS, HTML, CSS, and JavaScript. My dedication to blending
-        functional technology with aesthetic design enables me to deliver
-        exceptional results for my clients.
-      </p>
+    <div className="relative w-full h-screen">
+      <CanvasBackground />
+      <BallAnimation />
+      <div
+        className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-9xl flex flex-col  justify-center items-start gap-2 z-20"
+        style={{ color: "#F241B3" }}
+      >
+        <div>MULTI-</div>
+        <div className="ml-40">DISCIPLINED</div>
+        <AnimatedHeroText />
+        <p className=" text-base font-normal max-w-md text text-gray-600">
+          Based in Germany, I have nurtured a deep passion for crafting
+          beautiful and intuitive digital experiences.
+        </p>
+      </div>
     </div>
   );
 }
