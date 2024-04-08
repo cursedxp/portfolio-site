@@ -25,7 +25,7 @@ export default function AnimatedHeroText() {
 
   return (
     <div className=" text-left ml-10">
-      <span className=" text-blue-500" ref={el} />
+      <span className=" text-emerald-500" ref={el} />
     </div>
   );
 }
