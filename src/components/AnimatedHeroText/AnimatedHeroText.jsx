@@ -13,12 +13,9 @@ export default function AnimatedHeroText() {
       loop: true,
     };
 
-    // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, options);
 
     return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
       typed.current.destroy();
     };
   }, []);

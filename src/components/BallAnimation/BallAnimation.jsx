@@ -66,7 +66,7 @@ export default function BallAnimation() {
 
     function animate() {
       requestAnimationFrame(animate);
-      context.clearRect(0, 0, canvas.width, canvas.height); // Clears the canvas
+      context.clearRect(0, 0, canvas.width, canvas.height);
 
       circles.forEach(function (circle) {
         circle.update();
@@ -75,7 +75,6 @@ export default function BallAnimation() {
 
     animate();
 
-    // Cleanup on component unmount
     return () => {
       window.removeEventListener("resize", resizeCanvas);
     };

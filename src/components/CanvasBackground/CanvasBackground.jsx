@@ -47,7 +47,6 @@ export default function CanvasBackground() {
 
     runAnimation();
 
-    // Cleanup
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
