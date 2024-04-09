@@ -14,7 +14,7 @@ export default function Hero() {
           Based in Germany, I have nurtured a deep passion for crafting
           beautiful and intuitive digital experiences.
         </p>
-        <button className=" text-base font-normal px-6 py-3 bg-blue-400 rounded-md self-end text-white">
+        <button className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md self-end text-white">
           Contact me
         </button>
       </div>
