@@ -1,6 +1,6 @@
 export default function TechStack() {
   return (
-    <div className="flex flex-row text-gray-800">
+    <div className="flex flex-row text-gray-800 my-20">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
         <h1 className="text-6xl font-bold leading-tight mb-10">
