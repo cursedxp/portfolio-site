@@ -8,10 +8,10 @@ export default function ExperinceTab() {
   };
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col text-gray-800">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
-        <h1 className="text-6xl font-bold leading-tight text-gray-800 ">
+        <h1 className="text-6xl font-bold leading-tight ">
           Where I have worked
         </h1>
       </div>
