@@ -26,14 +26,18 @@ export default function ExperinceTab() {
         <div className="fexl w-1/4">
           <ul className="flex flex-col font-bold text-base">
             <li
-              className="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer"
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+                activeTab === 0 ? "bg-fuchsia-100" : ""
+              }`}
               onClick={() => handleTabChange(0)}
             >
               <div className=" h-8 w-8 bg-fuchsia-500 rounded-full"></div>
               Freelance
             </li>
             <li
-              className="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer"
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+                activeTab === 1 ? "bg-fuchsia-100" : ""
+              }`}
               onClick={() => handleTabChange(1)}
             >
               <svg viewBox="0 0 233.5036 299.2473" width={32} height={32}>
@@ -53,7 +57,9 @@ export default function ExperinceTab() {
               trivago
             </li>
             <li
-              className="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer"
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+                activeTab === 2 ? "bg-fuchsia-100" : ""
+              }`}
               onClick={() => handleTabChange(2)}
             >
               <svg
