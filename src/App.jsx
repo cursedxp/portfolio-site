@@ -2,6 +2,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import ExperinceTab from "./components/ExperinceTab/ExperinceTab";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Portfolio from "./components/Portfolio/Portfolio";
 import TechStack from "./components/TechStack/TechStack";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <AboutMe />
           <TechStack />
           <ExperinceTab />
+          <Portfolio />
         </div>
       </main>
     </>
