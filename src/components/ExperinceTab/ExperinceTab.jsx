@@ -177,7 +177,7 @@ export default function ExperinceTab() {
                     months , successfully boosting user engagement by 8%.
                   </li>
                   <li>
-                    Within 3 months, steered production team's workflow for
+                    Within 3 months, steered production team`s workflow for
                     efficient, on-time delivery of new JotForm feature,
                     resulting in a 15% improvement in project efficiency
                   </li>
