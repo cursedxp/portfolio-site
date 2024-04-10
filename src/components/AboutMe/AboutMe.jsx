@@ -1,9 +1,9 @@
 export default function AboutMe() {
   return (
     <div className="flex flex-row ">
-      <div className="flex-1 flex-col p-6">
+      <div className="flex-1 flex-col px-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
-        <h1 className="text-6xl font-bold leading-tight text-gray-800 ">
+        <h1 className="text-6xl font-bold leading-tight text-gray-800">
           My <br></br> development - design odyssey
         </h1>
       </div>
@@ -20,7 +20,7 @@ export default function AboutMe() {
           endeavors was my commitment to improving user experiences through
           rigorous, data-driven research and comprehensive analysis.
         </p>
-        <p className="mb-4">
+        <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
           earum quam quaerat vitae dolor aut ad sunt. Aspernatur libero
           perspiciatis aperiam placeat, exercitationem quam velit sunt in

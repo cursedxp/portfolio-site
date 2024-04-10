@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <main className="flex justify-center">
+      <main className="flex  justify-center ">
         <div className="relative  py-16  max-w-6xl">
           <div className="absolute inset-0 pointer-events-none border-l border-r border-gray-200"></div>
           <div className="absolute inset-0 grid grid-cols-4 pointer-events-none -z-10">
@@ -17,10 +17,12 @@ function App() {
             <div className="col-span-1 border-dashed border-r border-gray-200"></div>
             <div className="col-span-1 border-dashed border-r border-gray-200"></div>
           </div>
-          <AboutMe />
-          <TechStack />
-          <ExperinceTab />
-          <Portfolio />
+          <div className="flex flex-col gap-20">
+            <AboutMe />
+            <TechStack />
+            <ExperinceTab />
+            <Portfolio />
+          </div>
         </div>
       </main>
     </>
