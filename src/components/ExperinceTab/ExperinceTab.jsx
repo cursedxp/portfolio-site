@@ -12,14 +12,15 @@ export default function ExperinceTab() {
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
         <h1 className="text-6xl font-bold leading-tight ">
-          Where I have worked
+          Professional Experience
         </h1>
       </div>
       <div className="flex-1 px-6 text-base text-gray-600 max-w-3xl">
         <p className="mb-8">
-          My path in the realm of design and development is deeply rooted in a
-          robust academic background and a steadfast dedication to the
-          principles of user-centered design.
+          My career in UX design and front-end development has been marked by
+          significant roles across various esteemed companies. Below is an
+          overview of the places where I have honed my skills and contributed to
+          impactful projects
         </p>
       </div>
       <div className="flex">
