@@ -9,22 +9,25 @@ export default function AboutMe() {
       </div>
       <div className="flex-1 p-6 text-base text-gray-600">
         <p className="mb-4">
-          My path in the realm of design and development is deeply rooted in a
-          robust academic background and a steadfast dedication to the
-          principles of user-centered design.
+          Hello! I'm a dedicated professional with a robust background in UX
+          design, seamlessly transitioned into front-end web development. My
+          journey in tech began with creating intuitive and visually appealing
+          user experiences, which naturally led me to the mechanics of how users
+          interact with these designs on the web.
         </p>
         <p className="mb-4">
-          This combination has not only shaped my approach but has also been
-          instrumental in my successful involvement in enhancing digital
-          platforms for various web and mobile projects. At the core of these
-          endeavors was my commitment to improving user experiences through
-          rigorous, data-driven research and comprehensive analysis.
+          With proficiency in HTML, CSS, JavaScript, and key frameworks and
+          technologies like React, Node.js, Express.js, and MongoDB, I am
+          skilled at bringing designs to life with clean, efficient code. My
+          combined experience in UX and front-end development allows me to craft
+          websites that not only look great but also perform seamlessly,
+          ensuring a fantastic user experience from start to finish.
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          earum quam quaerat vitae dolor aut ad sunt. Aspernatur libero
-          perspiciatis aperiam placeat, exercitationem quam velit sunt in
-          explicabo autem non!
+          I am passionate about using my skills to solve problems and build
+          innovative web solutions that meet user needs. Whether working on a
+          team or independently, I strive to push the boundaries of web
+          technology to create impactful digital experiences.
         </p>
       </div>
     </div>
