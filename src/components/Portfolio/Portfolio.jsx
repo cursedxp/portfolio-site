@@ -23,11 +23,7 @@ export default function Portfolio() {
         <h1 className="text-6xl font-bold leading-tight">Portfolio</h1>
       </div>
       <div className="px-6 text-base text-gray-600 max-w-3xl">
-        <p className="mb-8">
-          My path in the realm of design and development is deeply rooted in a
-          robust academic background and a steadfast dedication to the
-          principles of user-centered design.
-        </p>
+        <p className="mb-8"></p>
       </div>
       <div className="flex flex-wrap gap-12 px-8 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
