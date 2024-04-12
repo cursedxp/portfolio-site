@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
 import TechStack from "./components/TechStack/TechStack";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
             <TechStack />
             <ExperinceTab />
             <Portfolio />
+            <Contact />
           </div>
         </div>
       </main>
