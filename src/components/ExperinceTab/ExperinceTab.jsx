@@ -171,11 +171,10 @@ export default function ExperinceTab() {
               </div>
               <div>
                 <p className="my-6">
-                  At trivago, I was responsible for designing user interfaces
-                  for trivago Business Studio, a platform that helps hoteliers
-                  manage their online presence. I worked closely with product
-                  managers, developers, and other designers to create a
-                  user-centered design that met the needs of our users.
+                  At JotForm, I led a team of developers to create engaging user
+                  experiences for JotForm users. I worked closely with product
+                  managers and developers to ensure that our designs were
+                  implemented correctly and met the needs of our users.
                 </p>
                 <ul className="flex flex-col list-disc px-4 gap-y-4">
                   <li>
