@@ -6,9 +6,10 @@ export default function TechStack() {
         <h1 className="text-6xl font-bold leading-tight mb-10">
           Technologies <br></br> and tools
         </h1>
-        <p className="text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          earum quam quaerat vitae dolor aut ad sunt.{" "}
+        <p className="">
+          In my toolkit, you'll find a carefully selected array of technologies
+          and tools that I leverage to build seamless, effective web
+          applications. Here’s a glimpse into some of the key tools I work with.
         </p>
       </div>
       <div className="flex-1 p-6 text-base text-gray-600 bg-gray-50 shadow-md">
