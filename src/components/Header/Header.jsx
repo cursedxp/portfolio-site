@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import BurgerIcon from "../../assets/icon-hamburger.png";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
+  const menuRef = useRef(null);
   const handleMenu = () => {
-    setShowMenu(true);
+    setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="">
@@ -41,7 +55,7 @@ export default function Header() {
         </div>
       </div>
       <nav className="fixed z-20 top-5 right-5 flex justify-between items-center">
-        <div className="flex gap-4 items-center ">
+        <div className="flex gap-4 items-center" ref={menuRef}>
           {!showMenu && (
             <div
               className="p-4 bg-white rounded-full shadow-xl cursor-pointer"
