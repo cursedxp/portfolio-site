@@ -17,7 +17,7 @@ export default function Contact() {
       <div className="flex flex-col gap-4">
         <a href="mailto:anilozsoy@gmail.com">
           <div className="bg-emerald-500 px-8 py-3 rounded-md text-white">
-            Contact me
+            Say Hello
           </div>
         </a>
       </div>
