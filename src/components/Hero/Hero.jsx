@@ -1,6 +1,8 @@
 import CanvasBackground from "../CanvasBackground/CanvasBackground";
 import BallAnimation from "../BallAnimation/BallAnimation";
 import AnimatedHeroText from "../AnimatedHeroText/AnimatedHeroText";
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <div className="relative w-full h-screen">
@@ -14,9 +16,13 @@ export default function Hero() {
           Based in Germany, I have nurtured a deep passion for crafting
           beautiful and intuitive digital experiences.
         </p>
-        <button className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md self-end text-white">
+        <motion.button
+          className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md self-end text-white hover:shadow-xl"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Contact me
-        </button>
+        </motion.button>
       </div>
     </div>
   );
