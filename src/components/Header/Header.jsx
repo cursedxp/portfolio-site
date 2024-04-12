@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import BurgerIcon from "../../assets/icon-hamburger.png";
+import { motion } from "framer-motion";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -57,12 +58,13 @@ export default function Header() {
       <nav className="fixed z-20 top-5 right-5 flex justify-between items-center">
         <div className="flex gap-4 items-center" ref={menuRef}>
           {!showMenu && (
-            <div
+            <motion.div
+              whileHover={{ rotate: 360, duration: 2 }}
               className="p-4 bg-white rounded-full shadow-xl cursor-pointer"
               onClick={handleMenu}
             >
               <img src={BurgerIcon} width={32} height={32} alt="" />
-            </div>
+            </motion.div>
           )}
 
           {showMenu && (
