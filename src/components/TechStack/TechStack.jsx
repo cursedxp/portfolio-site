@@ -1,18 +1,41 @@
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+import RevealAnimation from "../RevealAnimation/RevealAnimation";
 export default function TechStack() {
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ opacity: 1, x: 0 });
+    }
+  });
+
   return (
     <div className="flex flex-row text-gray-800 my-20">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
-        <h1 className="text-6xl font-bold leading-tight mb-10">
-          Technologies <br></br> and tools
-        </h1>
-        <p className="">
-          In my toolkit, you'll find a carefully selected array of technologies
-          and tools that I leverage to build seamless, effective web
-          applications. Here’s a glimpse into some of the key tools I work with.
-        </p>
+        <RevealAnimation>
+          <h1 className="text-6xl font-bold leading-tight mb-10">
+            Technologies <br></br> and tools
+          </h1>
+
+          <p className="">
+            In my toolkit, you'll find a carefully selected array of
+            technologies and tools that I leverage to build seamless, effective
+            web applications. Here’s a glimpse into some of the key tools I work
+            with.
+          </p>
+        </RevealAnimation>
       </div>
-      <div className="flex-1 p-6 text-base text-gray-600 bg-gray-50 shadow-md">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: 75 }}
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="flex-1 p-6 text-base text-gray-600 bg-gray-50 shadow-md"
+      >
         <div className="flex ">
           <div className="flex-1">
             <div className="font-bold text-2xl pb-6">Development</div>
@@ -43,7 +66,7 @@ export default function TechStack() {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
