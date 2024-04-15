@@ -1,5 +1,11 @@
 import { useState, useRef, useEffect } from "react";
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowDownTrayIcon,
+  CommandLineIcon,
+  BuildingOffice2Icon,
+  RectangleStackIcon,
+  IdentificationIcon,
+} from "@heroicons/react/24/outline";
 import BurgerIcon from "../../assets/icon-hamburger.png";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -41,71 +47,81 @@ export default function Header() {
         </div>
         {/* Social icons or personal logos can be added here */}
       </div>
-      <nav className="fixed z-20 top-5 right-5 flex justify-between items-center">
-        <div className="flex gap-4 items-center" ref={menuRef}>
-          {!showMenu && (
-            <motion.div
-              whileHover={{ rotate: 360, duration: 2 }}
-              className="p-4 bg-white rounded-full shadow-xl cursor-pointer"
-              onClick={handleMenu}
-            >
-              <img src={BurgerIcon} width={32} height={32} alt="Menu Icon" />
-            </motion.div>
-          )}
-
-          {showMenu && (
-            <div className="bg-white p-4 rounded-md shadow-xl z-50">
-              <ul className="flex flex-col gap-3 text-gray-800">
-                <li>
-                  <Link
-                    to="aboutme"
-                    className=" cursor-pointer"
-                    smooth={true}
-                    duration={1000}
-                  >
-                    About me
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="techstack"
-                    className=" cursor-pointer"
-                    smooth={true}
-                    duration={1000}
-                  >
-                    Techstack
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="experience"
-                    className=" cursor-pointer"
-                    smooth={true}
-                    duration={1000}
-                  >
-                    Experience
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="portfolio"
-                    className=" cursor-pointer"
-                    smooth={true}
-                    duration={1000}
-                  >
-                    Portfolio
-                  </Link>
-                </li>
-                <li className="flex gap-2 rounded-md text-emerald-400">
-                  <ArrowDownTrayIcon className="h-5 w-5 text-emerald-400" />
-                  <Link to="resume" smooth={true} duration={1000}>
-                    My Resume
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
+      <nav
+        ref={menuRef}
+        className="fixed z-20 top-5 right-5 flex justify-between items-center"
+      >
+        {!showMenu && (
+          <motion.div
+            whileHover={{ rotate: 360, duration: 2 }}
+            className=" bg-white rounded-full shadow-xl cursor-pointer"
+            onClick={handleMenu}
+          >
+            <img
+              src={BurgerIcon}
+              width={32}
+              className="m-4"
+              height={32}
+              alt="Menu Icon"
+            />
+          </motion.div>
+        )}
+        {showMenu && (
+          <div className="bg-white rounded-md shadow-xl z-50 w-48">
+            <ul className="flex flex-col w-full text-gray-800">
+              <li className=" flex rounded-t-md  hover:bg-emerald-500 hover:text-white">
+                <Link
+                  to="aboutme"
+                  className="cursor-pointer  p-4 flex items-center gap-2 "
+                  smooth={true}
+                  duration={1000}
+                >
+                  <IdentificationIcon className="h-5 w-5" />
+                  About me
+                </Link>
+              </li>
+              <li className="flexitems-center hover:bg-emerald-500 hover:text-white">
+                <Link
+                  to="techstack"
+                  className=" cursor-pointer  p-4 flex items-center gap-2"
+                  smooth={true}
+                  duration={1000}
+                >
+                  <CommandLineIcon className="h-5 w-5" />
+                  Techstack
+                </Link>
+              </li>
+              <li className=" hover:bg-emerald-500 hover:text-white">
+                <Link
+                  to="experience"
+                  className=" cursor-pointer p-4 flex items-center gap-2"
+                  smooth={true}
+                  duration={1000}
+                >
+                  <BuildingOffice2Icon className="h-5 w-5" />
+                  Experience
+                </Link>
+              </li>
+              <li className=" hover:bg-emerald-500 hover:text-white">
+                <Link
+                  to="portfolio"
+                  className="  cursor-pointer p-4 flex items-center gap-2"
+                  smooth={true}
+                  duration={1000}
+                >
+                  <RectangleStackIcon className="h-5 w-5" />
+                  Portfolio
+                </Link>
+              </li>
+              <li className="flex gap-2 p-4 rounded-md text-emerald-400">
+                <ArrowDownTrayIcon className="h-5 w-5 text-emerald-400" />
+                <Link to="resume" smooth={true} duration={1000}>
+                  My Resume
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );
