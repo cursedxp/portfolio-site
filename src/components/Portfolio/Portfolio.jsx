@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import RevealAnimation from "../RevealAnimation/RevealAnimation";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function Portfolio() {
   const [displayCount, setDisplayCount] = useState(3);
-
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
   const handleDisplayCount = () => {
     setDisplayCount((prevCount) => prevCount + 3);
   };
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ opacity: 1 });
+    }
+  });
 
   const portfolioItems = [
     { title: "Project 1", description: "Description for Project 1" },
@@ -20,19 +30,24 @@ export default function Portfolio() {
     <div className="flex flex-col text-gray-800">
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
-        <h1 className="text-6xl font-bold leading-tight">Portfolio</h1>
+        <RevealAnimation>
+          <h1 className="text-6xl font-bold leading-tight">Portfolio</h1>
+          <p className="my-8 text-base text-gray-600 max-w-3xl">
+            Welcome to my portfolio, a curated showcase of my most notable
+            projects front-end development. Each project is a testament to my
+            ability to blend aesthetic design with functional technology,
+            creating seamless digital experiences that engage and delight users.
+          </p>
+        </RevealAnimation>
       </div>
-      <div className="px-6 text-base text-gray-600 max-w-3xl">
-        <p className="mb-8">
-          Welcome to my portfolio, a curated showcase of my most notable
-          projects front-end development. Each project is a testament to my
-          ability to blend aesthetic design with functional technology, creating
-          seamless digital experiences that engage and delight users.
-        </p>
-      </div>
+
       <div className="flex flex-wrap gap-12 px-8 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
-          <div
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0 }}
+            animate={mainControls}
+            transition={{ delay: 0.5 * index }}
             key={index}
             className="flex-1 min-w-[30%] max-w-[30%] relative bg-yellow-500 shadow-lg"
           >
@@ -43,7 +58,7 @@ export default function Portfolio() {
                 <p>{item.description}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {displayCount < portfolioItems.length && (

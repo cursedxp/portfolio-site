@@ -1,4 +1,6 @@
 import { useState } from "react";
+import RevealAnimation from "../RevealAnimation/RevealAnimation";
+import { motion } from "framer-motion";
 
 export default function ExperinceTab() {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,32 +13,37 @@ export default function ExperinceTab() {
     <div className="flex flex-col text-gray-800">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
-        <h1 className="text-6xl font-bold leading-tight ">
-          Professional Experience
-        </h1>
+        <RevealAnimation>
+          <h1 className="text-6xl font-bold leading-tight ">
+            Professional Experience
+          </h1>
+          <p className="my-8 text-base text-gray-600 max-w-3xl">
+            My career in UX design and front-end development has been marked by
+            significant roles across various esteemed companies. Below is an
+            overview of the places where I have honed my skills and contributed
+            to impactful projects
+          </p>
+        </RevealAnimation>
       </div>
-      <div className="flex-1 px-6 text-base text-gray-600 max-w-3xl">
-        <p className="mb-8">
-          My career in UX design and front-end development has been marked by
-          significant roles across various esteemed companies. Below is an
-          overview of the places where I have honed my skills and contributed to
-          impactful projects
-        </p>
-      </div>
+
       <div className="flex">
         <div className="fexl w-1/4">
           <ul className="flex flex-col font-bold text-base">
-            <li
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+            <motion.li
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
                 activeTab === 0 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(0)}
             >
               <div className=" h-8 w-8 bg-fuchsia-500 rounded-full"></div>
               Freelance
-            </li>
-            <li
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 1.05, shadow: "md" }}
+              whileTap={{ scale: 0.9 }}
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
                 activeTab === 1 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(1)}
@@ -56,9 +63,11 @@ export default function ExperinceTab() {
                 />
               </svg>
               trivago
-            </li>
-            <li
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer ${
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg  ${
                 activeTab === 2 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(2)}
@@ -88,7 +97,7 @@ export default function ExperinceTab() {
                 />
               </svg>
               Jotform
-            </li>
+            </motion.li>
           </ul>
         </div>
 
