@@ -1,7 +1,7 @@
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-export default function AboutMe() {
+export default function AboutMe({ id }) {
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -13,7 +13,7 @@ export default function AboutMe() {
   });
 
   return (
-    <div className="flex flex-row ">
+    <div id={id} className="flex flex-row ">
       <div className="flex-1 flex-col px-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
         <RevealAnimation>

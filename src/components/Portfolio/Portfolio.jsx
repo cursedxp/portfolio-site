@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-export default function Portfolio() {
+export default function Portfolio({ id }) {
   const [displayCount, setDisplayCount] = useState(3);
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
@@ -27,7 +27,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="flex flex-col text-gray-800">
+    <div id={id} className="flex flex-col text-gray-800">
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
         <RevealAnimation>

@@ -1,7 +1,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
-export default function TechStack() {
+export default function TechStack({ id }) {
   const ref = useRef();
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -13,7 +13,7 @@ export default function TechStack() {
   });
 
   return (
-    <div className="flex flex-row text-gray-800 my-20">
+    <div id={id} className="flex flex-row text-gray-800 my-20">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
         <RevealAnimation>

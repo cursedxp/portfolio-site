@@ -2,7 +2,7 @@ import { useState } from "react";
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion } from "framer-motion";
 
-export default function ExperinceTab() {
+export default function ExperinceTab({ id }) {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (index) => {
@@ -10,7 +10,7 @@ export default function ExperinceTab() {
   };
 
   return (
-    <div className="flex flex-col text-gray-800">
+    <div id={id} className="flex flex-col text-gray-800">
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
         <RevealAnimation>
