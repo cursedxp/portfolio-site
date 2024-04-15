@@ -70,10 +70,10 @@ export default function Header() {
           {showMenu && (
             <div className=" bg-white p-4 rounded-md shadow-xl">
               <ul className="flex flex-col gap-3 text-gray-800">
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Blog</li>
-                <li>Skills</li>
+                <li>About me</li>
+                <li>Techstack</li>
+                <li>Experience</li>
+                <li>Portfolio</li>
                 <li className="flex gap-2 rounded-md text-emerald-400">
                   <ArrowDownTrayIcon className="h-5 w-5 text-emerald-400" />
                   My Resume
