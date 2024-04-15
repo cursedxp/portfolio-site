@@ -47,7 +47,7 @@ export default function Portfolio({ id }) {
             ref={ref}
             initial={{ opacity: 0 }}
             animate={mainControls}
-            transition={{ delay: 0.5 * index }}
+            transition={{ delay: 0.3 * index }}
             key={index}
             className="flex-1 min-w-[30%] max-w-[30%] relative bg-yellow-500 shadow-lg"
           >
