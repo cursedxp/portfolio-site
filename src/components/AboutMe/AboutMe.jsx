@@ -1,13 +1,42 @@
+import RevealAnimation from "../RevealAnimation/RevealAnimation";
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 export default function AboutMe() {
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ opacity: 1, x: 0 });
+    }
+  });
+
   return (
     <div className="flex flex-row ">
       <div className="flex-1 flex-col px-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
-        <h1 className="text-6xl font-bold leading-tight text-gray-800">
-          My <br></br> development - design odyssey
-        </h1>
+        <RevealAnimation>
+          <h1 className="text-6xl font-bold leading-tight text-gray-800">
+            <RevealAnimation>
+              <span>My</span>
+            </RevealAnimation>
+            <RevealAnimation>
+              <span>development - </span>
+              <RevealAnimation>
+                <span>design odyssey</span>
+              </RevealAnimation>
+            </RevealAnimation>
+          </h1>
+        </RevealAnimation>
       </div>
-      <div className="flex-1 p-6 text-base text-gray-600">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: 75 }}
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className="flex-1 p-6 text-base text-gray-600"
+      >
         <p className="mb-4">
           Hello! I'm a dedicated professional with a robust background in UX
           design, seamlessly transitioned into front-end web development. My
@@ -29,7 +58,7 @@ export default function AboutMe() {
           team or independently, I strive to push the boundaries of web
           technology to create impactful digital experiences.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }
