@@ -19,10 +19,10 @@ function App() {
             <div className="col-span-1 border-dashed border-r border-gray-200"></div>
           </div>
           <div className="flex flex-col gap-20">
-            <AboutMe />
-            <TechStack />
-            <ExperinceTab />
-            <Portfolio />
+            <AboutMe id="aboutme" />
+            <TechStack id="techstack" />
+            <ExperinceTab id="experience" />
+            <Portfolio id="portfolio" />
             <Contact />
           </div>
         </div>
