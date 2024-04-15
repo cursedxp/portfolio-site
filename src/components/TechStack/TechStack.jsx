@@ -20,7 +20,8 @@ export default function TechStack({ id }) {
           <h1 className="text-6xl font-bold leading-tight mb-10">
             Technologies <br></br> and tools
           </h1>
-
+        </RevealAnimation>
+        <RevealAnimation>
           <p className="">
             In my toolkit, you'll find a carefully selected array of
             technologies and tools that I leverage to build seamless, effective
