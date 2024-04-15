@@ -12,9 +12,9 @@ export default function Contact() {
             Get in touch
           </h1>
           <p className="mb-8 px-6 text-base text-gray-600 max-w-3xl text-center">
-            Although I’m currently looking for new opportunities, my inbox is
-            always open. Whether you have a question or just want to say hi,
-            I’ll try my best to get back to you!
+            I’m currently looking for new opportunities, my inbox is always
+            open. Whether you have a question or just want to say hi, I’ll try
+            my best to get back to you!
           </p>
         </RevealAnimation>
       </div>
