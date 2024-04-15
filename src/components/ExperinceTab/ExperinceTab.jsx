@@ -17,6 +17,8 @@ export default function ExperinceTab({ id }) {
           <h1 className="text-6xl font-bold leading-tight ">
             Professional Experience
           </h1>
+        </RevealAnimation>
+        <RevealAnimation>
           <p className="my-8 text-base text-gray-600 max-w-3xl">
             My career in UX design and front-end development has been marked by
             significant roles across various esteemed companies. Below is an
