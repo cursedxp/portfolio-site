@@ -14,7 +14,7 @@ export default function ExperinceTab({ id }) {
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
         <RevealAnimation>
-          <h1 className="text-6xl font-bold leading-tight ">
+          <h1 className="text-6xl sm:text-4xl font-bold leading-tight ">
             Professional Experience
           </h1>
         </RevealAnimation>
