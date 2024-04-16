@@ -8,10 +8,10 @@ export default function Contact() {
           What is next?
         </h3>
         <RevealAnimation>
-          <h1 className="text-6xl font-bold leading-tight text-center">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight text-center">
             Get in touch
           </h1>
-          <p className="mb-8 px-6 text-base text-gray-600 max-w-3xl text-center">
+          <p className="my-8 px-6 text-base text-gray-600 max-w-3xl text-center">
             I’m currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I’ll try
             my best to get back to you!
