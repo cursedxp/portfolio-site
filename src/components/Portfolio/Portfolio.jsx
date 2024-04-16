@@ -31,7 +31,7 @@ export default function Portfolio({ id }) {
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
         <RevealAnimation>
-          <h1 className="text-6xl sm:text-4xl font-bold leading-tight">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl font-bold leading-tight">
             Portfolio
           </h1>
           <p className="my-8 text-base text-gray-600 max-w-3xl">
