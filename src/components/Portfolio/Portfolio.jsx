@@ -31,7 +31,7 @@ export default function Portfolio({ id }) {
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
         <RevealAnimation>
-          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl font-bold leading-tight">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight">
             Portfolio
           </h1>
           <p className="my-8 text-base text-gray-600 max-w-3xl">
@@ -43,7 +43,7 @@ export default function Portfolio({ id }) {
         </RevealAnimation>
       </div>
 
-      <div className="flex flex-wrap xl:gap-12 lg:gap-10 md:gap-4 sm:gap-4 px-8 sm:px-4 justify-center">
+      <div className="flex flex-row xs:flex-col sm:flex-row xs:justify-center xs:items-center xs:gap-4 flex-wrap xl:gap-12 lg:gap-8 md:gap-4 sm:gap-4 px-8 sm:px-4 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
           <motion.div
             ref={ref}
@@ -51,7 +51,7 @@ export default function Portfolio({ id }) {
             animate={mainControls}
             transition={{ delay: 0.3 * index }}
             key={index}
-            className="flex-1 min-w-[30%] max-w-[30%] relative bg-yellow-500 shadow-lg"
+            className="flex-1 xs:min-w-[60%] xs:max-w-[60%] sm:min-w-[30%] sm:max-w-[30%] relative bg-yellow-500 shadow-lg"
           >
             <img src="https://picsum.photos/400/600" alt="" />
             <div className="absolute top-0 left-0 bg-gradient-to-b from-transparent to-black h-full w-full flex flex-col justify-end">
@@ -72,7 +72,7 @@ export default function Portfolio({ id }) {
             Load More
           </button>
           <div className="absolute top-3 -z-10 left-0 w-full px-32 py-2">
-            <div className="border-t border-dashed border-emerald-500 w-full"></div>
+            <div className="border-t border-dashed border-emerald-500 w-full xs:hidden sm:block"></div>
           </div>
         </div>
       )}
