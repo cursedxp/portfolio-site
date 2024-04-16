@@ -19,7 +19,7 @@ export default function ExperinceTab({ id }) {
           </h1>
         </RevealAnimation>
         <RevealAnimation>
-          <p className="my-8 text-base text-gray-600 max-w-3xl">
+          <p className="my-6 text-base text-gray-600 max-w-3xl">
             My career in UX design and front-end development has been marked by
             significant roles across various esteemed companies. Below is an
             overview of the places where I have honed my skills and contributed
@@ -29,7 +29,7 @@ export default function ExperinceTab({ id }) {
       </div>
       <div className="flex xl:flex-row xs:flex-col lg:flex-row md:flex-row">
         <div className="xl:w-1/4 lg:w-1/4 xs:w-full md:w-1/4">
-          <ul className="flex xl:flex-col xs:flex-row lg:flex-col md:flex-col xs:bg-slate-100 xl:bg-white font-bold text-base">
+          <ul className="flex xl:flex-col xs:flex-row lg:flex-col md:flex-col xs:bg-slate-50 xl:bg-white font-bold text-base">
             <motion.li
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
@@ -38,7 +38,7 @@ export default function ExperinceTab({ id }) {
               }`}
               onClick={() => handleTabChange(0)}
             >
-              <div className=" h-8 w-8 bg-fuchsia-500 rounded-full xs:hidden"></div>
+              <div className=" h-8 w-8 bg-fuchsia-500 rounded-full xs:hidden sm:block"></div>
               Freelance
             </motion.li>
             <motion.li
