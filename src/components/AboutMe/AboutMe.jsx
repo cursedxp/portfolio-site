@@ -15,9 +15,9 @@ export default function AboutMe({ id }) {
   return (
     <div
       id={id}
-      className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-4 sm:p-8 md:p-4"
+      className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-4 sm:p-8 md:p-4 xs:p-6"
     >
-      <div className="flex-1 flex-col px-6 md:px-2 ">
+      <div className="flex-1 flex-col">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
         <RevealAnimation>
           <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold xl:leading-tight md:leading-snug text-gray-800">
@@ -38,7 +38,7 @@ export default function AboutMe({ id }) {
         initial={{ opacity: 0, x: 75 }}
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex-1 p-6 text-base text-gray-600"
+        className="flex-1 my-6 text-base text-gray-600"
       >
         <p className="mb-4">
           Hello! I'm a dedicated professional with a robust background in UX
