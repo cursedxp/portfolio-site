@@ -11,10 +11,10 @@ export default function ExperinceTab({ id }) {
 
   return (
     <div id={id} className="flex flex-col text-gray-800">
-      <div className="flex-1 flex-col p-6">
+      <div className="flex flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
         <RevealAnimation>
-          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl font-bold leading-tight ">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight ">
             Professional Experience
           </h1>
         </RevealAnimation>
@@ -27,25 +27,24 @@ export default function ExperinceTab({ id }) {
           </p>
         </RevealAnimation>
       </div>
-
-      <div className="flex">
-        <div className="fexl w-1/4">
-          <ul className="flex flex-col font-bold text-base">
+      <div className="flex xl:flex-row xs:flex-col lg:flex-row md:flex-row">
+        <div className="xl:w-1/4 lg:w-1/4 xs:w-full md:w-1/4">
+          <ul className="flex xl:flex-col xs:flex-row lg:flex-col md:flex-col xs:bg-slate-100 xl:bg-white font-bold text-base">
             <motion.li
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
+              className={`flex items-center gap-4 p-4 xs:p-3  hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
                 activeTab === 0 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(0)}
             >
-              <div className=" h-8 w-8 bg-fuchsia-500 rounded-full"></div>
+              <div className=" h-8 w-8 bg-fuchsia-500 rounded-full xs:hidden"></div>
               Freelance
             </motion.li>
             <motion.li
               whileHover={{ scale: 1.05, shadow: "md" }}
               whileTap={{ scale: 0.9 }}
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
+              className={`flex items-center gap-4 p-4 xs:p-3 hover:bg-emerald-100 cursor-pointer hover:shadow-lg ${
                 activeTab === 1 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(1)}
@@ -69,7 +68,7 @@ export default function ExperinceTab({ id }) {
             <motion.li
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
-              className={`flex items-center gap-4 p-4 hover:bg-emerald-100 cursor-pointer hover:shadow-lg  ${
+              className={`flex items-center gap-4 p-4 xs:p-3  hover:bg-emerald-100 cursor-pointer hover:shadow-lg  ${
                 activeTab === 2 ? "bg-fuchsia-100" : ""
               }`}
               onClick={() => handleTabChange(2)}
@@ -102,10 +101,9 @@ export default function ExperinceTab({ id }) {
             </motion.li>
           </ul>
         </div>
-
-        <div className="flex flex-col w-3/4 shadow-md bg-white">
+        <div className="flex flex-col xl:w-3/4 lg:w-3/4 md:w-3/4 xs:w-full xl:p-8 lg:p-8 md:p-8 xs:p-8  shadow-md bg-white">
           {activeTab === 0 && (
-            <div className="p-4">
+            <div>
               <div className="flex flex-col">
                 <h3 className="text-2xl font-bold">
                   Freelance Frontend Developer
@@ -138,7 +136,7 @@ export default function ExperinceTab({ id }) {
             </div>
           )}
           {activeTab === 1 && (
-            <div className="p-4">
+            <div>
               <div className="flex flex-col">
                 <h3 className="text-2xl font-bold">
                   Senior Experience Designer
@@ -174,7 +172,7 @@ export default function ExperinceTab({ id }) {
             </div>
           )}
           {activeTab === 2 && (
-            <div className="p-4">
+            <div>
               <div className="flex flex-col">
                 <h3 className="text-2xl font-bold">
                   Experience Designer - Team Lead
