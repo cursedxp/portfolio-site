@@ -31,7 +31,9 @@ export default function Portfolio({ id }) {
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
         <RevealAnimation>
-          <h1 className="text-6xl font-bold leading-tight">Portfolio</h1>
+          <h1 className="text-6xl sm:text-4xl font-bold leading-tight">
+            Portfolio
+          </h1>
           <p className="my-8 text-base text-gray-600 max-w-3xl">
             Welcome to my portfolio, a curated showcase of my most notable
             projects front-end development. Each project is a testament to my
@@ -41,7 +43,7 @@ export default function Portfolio({ id }) {
         </RevealAnimation>
       </div>
 
-      <div className="flex flex-wrap xl:gap-12 lg:gap-10 md:gap-4 px-8 justify-center">
+      <div className="flex flex-wrap xl:gap-12 lg:gap-10 md:gap-4 sm:gap-4 px-8 sm:px-4 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
           <motion.div
             ref={ref}
