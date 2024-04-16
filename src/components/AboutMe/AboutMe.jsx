@@ -13,11 +13,11 @@ export default function AboutMe({ id }) {
   });
 
   return (
-    <div id={id} className="flex flex-row ">
+    <div id={id} className="flex flex-row md:flex-col">
       <div className="flex-1 flex-col px-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
         <RevealAnimation>
-          <h1 className="text-6xl font-bold leading-tight text-gray-800">
+          <h1 className="xl:text-6xl md:text-5xl font-bold xl:leading-tight md:leading-snug text-gray-800">
             <RevealAnimation>
               <span>My</span>
             </RevealAnimation>
