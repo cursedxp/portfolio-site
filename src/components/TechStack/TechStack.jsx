@@ -15,17 +15,17 @@ export default function TechStack({ id }) {
   return (
     <div
       id={id}
-      className="flex xl:flex-row lg:flex-row md:flex-row xs:flex-col text-gray-800 my-20 xs:p-8 sm:p-8 md:p-0 lg:p-0"
+      className="flex xl:flex-row lg:flex-row md:flex-row xs:flex-col text-gray-800 my-20 xs:p-6 sm:p-8 md:p-0 lg:p-0"
     >
       <div className="flex-1 flex-col lg:p-6 xl:p-6 md:p-5">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
         <RevealAnimation>
-          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight mb-10">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight ">
             Technologies <br></br> and tools
           </h1>
         </RevealAnimation>
         <RevealAnimation>
-          <p className="">
+          <p className="my-6">
             In my toolkit, you'll find a carefully selected array of
             technologies and tools that I leverage to build seamless, effective
             web applications. Here’s a glimpse into some of the key tools I work
