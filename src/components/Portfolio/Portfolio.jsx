@@ -34,7 +34,7 @@ export default function Portfolio({ id }) {
           <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight">
             Portfolio
           </h1>
-          <p className="my-8 text-base text-gray-600 max-w-3xl">
+          <p className="my-6 text-base text-gray-600 max-w-3xl">
             Welcome to my portfolio, a curated showcase of my most notable
             projects front-end development. Each project is a testament to my
             ability to blend aesthetic design with functional technology,
