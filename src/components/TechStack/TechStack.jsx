@@ -17,7 +17,7 @@ export default function TechStack({ id }) {
       <div className="flex-1 flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
         <RevealAnimation>
-          <h1 className="text-6xl font-bold leading-tight mb-10">
+          <h1 className="xl:text-6xl md:text-5xl font-bold leading-tight mb-10">
             Technologies <br></br> and tools
           </h1>
         </RevealAnimation>
