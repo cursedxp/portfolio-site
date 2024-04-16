@@ -13,11 +13,14 @@ export default function TechStack({ id }) {
   });
 
   return (
-    <div id={id} className="flex flex-row text-gray-800 my-20">
-      <div className="flex-1 flex-col p-6">
+    <div
+      id={id}
+      className="flex xl:flex-row lg:flex-row md:flex-row xs:flex-col text-gray-800 my-20 xs:p-8 sm:p-8 md:p-0 lg:p-0"
+    >
+      <div className="flex-1 flex-col lg:p-6 xl:p-6 md:p-5">
         <h3 className=" text-sm font-bold text-fuchsia-500">Techstack</h3>
         <RevealAnimation>
-          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl font-bold leading-tight mb-10">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold leading-tight mb-10">
             Technologies <br></br> and tools
           </h1>
         </RevealAnimation>
@@ -37,7 +40,7 @@ export default function TechStack({ id }) {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="flex-1 p-6 text-base text-gray-600 bg-gray-50 shadow-md"
       >
-        <div className="flex ">
+        <div className="flex gap-4">
           <div className="flex-1">
             <div className="font-bold text-2xl pb-6">Development</div>
             <div className="flex gap-8">
