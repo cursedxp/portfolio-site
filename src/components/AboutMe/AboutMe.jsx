@@ -15,7 +15,7 @@ export default function AboutMe({ id }) {
   return (
     <div
       id={id}
-      className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-0 xs:p-8 sm:p-8 md:p-4"
+      className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-4 sm:p-8 md:p-4"
     >
       <div className="flex-1 flex-col px-6 md:px-2 ">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
