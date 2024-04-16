@@ -10,8 +10,8 @@ function App() {
     <>
       <Header />
       <Hero />
-      <main className="flex  justify-center ">
-        <div className="relative  py-16  max-w-6xl">
+      <main className="flex justify-center ">
+        <div className="relative  py-16    xl:max-w-6xl lg:max-w-4xl">
           <div className="absolute inset-0 pointer-events-none border-l border-r border-gray-200"></div>
           <div className="absolute inset-0 grid grid-cols-4 pointer-events-none -z-10">
             <div className="col-span-1 border-dashed border-r border-gray-200"></div>
