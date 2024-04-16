@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="relative w-full h-screen">
       <CanvasBackground />
       <BallAnimation />
-      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold xl:text-9xl lg:text-8xl md:text-7xl flex flex-col justify-center items-start gap-2 z-20 text-fuchsia-600">
+      <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold xl:text-9xl lg:text-8xl md:text-7xl sm:text-7xl flex flex-col justify-center items-start gap-2 z-20 text-fuchsia-600">
         <div>MULTI-</div>
         <div className="ml-40">DISCIPLINED</div>
         <AnimatedHeroText />
