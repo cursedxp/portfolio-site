@@ -13,11 +13,14 @@ export default function AboutMe({ id }) {
   });
 
   return (
-    <div id={id} className="flex flex-row md:flex-col sm:flex-col">
-      <div className="flex-1 flex-col px-6">
+    <div
+      id={id}
+      className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-0 xs:p-8 sm:p-8 md:p-4"
+    >
+      <div className="flex-1 flex-col px-6 md:px-2 ">
         <h3 className=" text-sm font-bold text-fuchsia-500">About me</h3>
         <RevealAnimation>
-          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl font-bold xl:leading-tight md:leading-snug text-gray-800">
+          <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xs:text-4xl font-bold xl:leading-tight md:leading-snug text-gray-800">
             <RevealAnimation>
               <span>My</span>
             </RevealAnimation>
