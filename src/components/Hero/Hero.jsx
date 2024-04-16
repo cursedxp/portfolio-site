@@ -17,7 +17,7 @@ export default function Hero() {
           beautiful and intuitive digital experiences.
         </p>
         <motion.div
-          className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md self-end xs:self-start mt-0 xs:mt-8 text-white hover:shadow-xl"
+          className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md sm:self-end xs:self-start mt-0 xs:mt-8 text-white hover:shadow-xl"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
