@@ -41,7 +41,7 @@ export default function Portfolio({ id }) {
         </RevealAnimation>
       </div>
 
-      <div className="flex flex-wrap xl:gap-12 lg:gap-10 px-8 justify-center">
+      <div className="flex flex-wrap xl:gap-12 lg:gap-10 md:gap-4 px-8 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
           <motion.div
             ref={ref}
