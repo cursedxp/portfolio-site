@@ -1,6 +1,6 @@
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion } from "framer-motion";
-export default function Contact() {
+export default function ContactMe() {
   return (
     <div className="flex flex-col text-gray-800 items-center">
       <div className="p-6">

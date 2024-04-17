@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Portfolio";
 import TechStack from "./components/TechStack/TechStack";
-// import Contact from "./components/Contact/Contact";
+import ContactMe from "./components/ContactMe/ContactMe";
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
             <TechStack id="techstack" />
             <ExperinceTab id="experience" />
             <Portfolio id="portfolio" />
-            {/* <Contact /> */}
+            <ContactMe id="contactme" />
           </div>
         </div>
       </main>
