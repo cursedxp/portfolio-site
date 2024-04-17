@@ -22,27 +22,26 @@ export default function Portfolio({ id }) {
       title: "SmallFresh",
       description: "Online shopping application",
       url: "https://smallfresh.netlify.app/",
-      imageUrl: "../../../public/smallfresh.netlify.app.png",
+      imageUrl: "/smallfresh.netlify.app.png",
     },
     {
       title: "Single Page Developer Portfolio",
       description: "Visually appealing and responsive web application",
       url: "https://cursedxp.github.io/single-page-developer-portfolio/",
-      imageUrl:
-        "../../../public/cursedxp.github.io_single-page-developer-portfolio.png",
+      imageUrl: "/cursedxp.github.io_single-page-developer-portfolio.png",
     },
     {
       title: "Product feedback application",
       description:
         "User-friendly responsive web app for streamlined feedback management.",
       url: "https://cursedxp.github.io/product-feedback-app/",
-      imageUrl: "../../../public/cursedxp.github.io_product-feedback-app.png",
+      imageUrl: "/cursedxp.github.io_product-feedback-app.png",
     },
     {
       title: "Jobs Board Application",
       description: "The Jobs Board Application is a responsive web platform",
       url: "https://cursedxp.github.io/devjobs-web-app/",
-      imageUrl: "../../../public/cursedxp.github.io_devjobs-web-app.png",
+      imageUrl: "/cursedxp.github.io_devjobs-web-app.png",
     },
   ];
 
