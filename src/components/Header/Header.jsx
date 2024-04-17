@@ -46,7 +46,7 @@ export default function Header() {
           </span>
         </div>
         <div className="flex gap-2">
-          <a href="https://www.linkedin.com/in/anil-ozsoy/" target="_blank">
+          <a href="https://www.linkedin.com/in/anilozsoy/" target="_blank">
             <img
               src="https://img.icons8.com/color/48/000000/linkedin.png"
               alt="Linkedin"
