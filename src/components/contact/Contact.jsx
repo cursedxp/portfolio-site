@@ -1,5 +1,5 @@
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
-
+import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <div className="flex flex-col text-gray-800 items-center">
@@ -19,11 +19,14 @@ export default function Contact() {
         </RevealAnimation>
       </div>
       <div className="flex flex-col gap-4">
-        <a href="mailto:anilozsoy@gmail.com">
-          <div className="bg-emerald-500 px-8 py-3 rounded-md text-white">
-            Say Hello
-          </div>
-        </a>
+        <motion.a
+          href="mailto:anilozsoy@gmail.com"
+          className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md sm:self-end xs:self-start mt-0  xs:ml-6  text-white hover:shadow-xl"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Say Hello
+        </motion.a>
       </div>
     </div>
   );

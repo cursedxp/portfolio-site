@@ -16,13 +16,14 @@ export default function Hero() {
           Based in Germany, I have nurtured a deep passion for crafting
           beautiful and intuitive digital experiences.
         </p>
-        <motion.div
+        <motion.a
+          href="mailto:anilozsoy@gmail.com"
           className=" text-base font-normal px-6 py-3 bg-emerald-400 rounded-md sm:self-end xs:self-start mt-0  xs:ml-6  text-white hover:shadow-xl"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           Contact me
-        </motion.div>
+        </motion.a>
       </div>
     </div>
   );
