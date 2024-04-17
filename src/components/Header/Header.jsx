@@ -113,11 +113,15 @@ export default function Header() {
                   Portfolio
                 </Link>
               </li>
-              <li className="flex gap-2 p-4 rounded-md text-emerald-400">
-                <ArrowDownTrayIcon className="h-5 w-5 text-emerald-400" />
-                <Link to="resume" smooth={true} duration={1000}>
+              <li className="flex gap-2 rounded-b-md text-emerald-400 hover:bg-emerald-500 hover:text-white">
+                <a
+                  href="../../../public/AnilOzsoy_Resume.pdf"
+                  download="AnilOzsoy_Resume.pdf"
+                  className="cursor-pointer p-4 flex items-center gap-2"
+                >
+                  <ArrowDownTrayIcon className="h-5 w-5 hover:text-white" />
                   My Resume
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
