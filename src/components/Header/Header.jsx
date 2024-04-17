@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="absolute z-50 top-4 left-4 flex items-center gap-4">
+      <div className="absolute z-30 top-4 left-4 flex items-center gap-4">
         <div className="flex flex-col">
           <span className="text-gray-600">
             Hi there, 👋 I am
