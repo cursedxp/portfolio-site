@@ -52,7 +52,7 @@ export default function Header() {
               alt="Linkedin"
             />
           </a>
-          <a href="hhttps://github.com/anilozsoy" target="_blank">
+          <a href="https://github.com/cursedxp" target="_blank">
             <img
               src="https://img.icons8.com/color/48/000000/github.png"
               alt="github.com/cursedxp"
