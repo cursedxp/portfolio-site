@@ -18,12 +18,32 @@ export default function Portfolio({ id }) {
   });
 
   const portfolioItems = [
-    { title: "Project 1", description: "Description for Project 1" },
-    { title: "Project 2", description: "Description for Project 2" },
-    { title: "Project 3", description: "Description for Project 3" },
-    { title: "Project 4", description: "Description for Project 4" },
-    { title: "Project 5", description: "Description for Project 5" },
-    { title: "Project 6", description: "Description for Project 6" },
+    {
+      title: "SmallFresh",
+      description: "Online shopping application",
+      url: "https://smallfresh.netlify.app/",
+      imageUrl: "../../../public/smallfresh.netlify.app.png",
+    },
+    {
+      title: "Single Page Developer Portfolio",
+      description: "Visually appealing and responsive web application",
+      url: "https://cursedxp.github.io/single-page-developer-portfolio/",
+      imageUrl:
+        "../../../public/cursedxp.github.io_single-page-developer-portfolio.png",
+    },
+    {
+      title: "Product feedback application",
+      description:
+        "User-friendly responsive web app for streamlined feedback management.",
+      url: "https://cursedxp.github.io/product-feedback-app/",
+      imageUrl: "../../../public/cursedxp.github.io_product-feedback-app.png",
+    },
+    {
+      title: "Jobs Board Application",
+      description: "The Jobs Board Application is a responsive web platform",
+      url: "https://cursedxp.github.io/devjobs-web-app/",
+      imageUrl: "../../../public/cursedxp.github.io_devjobs-web-app.png",
+    },
   ];
 
   return (
@@ -43,24 +63,40 @@ export default function Portfolio({ id }) {
         </RevealAnimation>
       </div>
 
-      <div className="flex flex-row xs:flex-col sm:flex-row xs:justify-center xs:items-center xs:gap-4 flex-wrap xl:gap-12 lg:gap-8 md:gap-4 sm:gap-4 px-8 sm:px-4 justify-center">
+      <div className="flex flex-row xs:flex-col sm:flex-row xs:justify-center xs:items-center xs:gap-4 flex-wrap xl:gap-10 lg:gap-8 md:gap-2 sm:gap-4 px-8 sm:px-4 justify-center">
         {portfolioItems.slice(0, displayCount).map((item, index) => (
-          <motion.div
+          <motion.a
             ref={ref}
             initial={{ opacity: 0 }}
             animate={mainControls}
             transition={{ delay: 0.3 * index }}
             key={index}
-            className="flex-1 xs:min-w-[60%] xs:max-w-[60%] sm:min-w-[30%] sm:max-w-[30%] relative bg-yellow-500 shadow-lg"
+            href={item.url}
+            whileHover={{
+              scale: 1.1,
+              transition: { type: "spring", stiffness: 300 },
+            }}
           >
-            <img src="https://picsum.photos/400/600" alt="" />
-            <div className="absolute top-0 left-0 bg-gradient-to-b from-transparent to-black h-full w-full flex flex-col justify-end">
-              <div className="p-4 text-white">
-                <div className="font-bold mb-4">{item.title}</div>
+            <div className="relative bg-gray-800 text-white xl:h-[500px] xl:w-[320px] lg:h-[500px] lg:w-[300px] md:h-[360px] md:w-[240px] sm:h-[360px] sm:w-[240px] xs:h-[360px] xs:w-[240px]  shadow-lg">
+              <div
+                className="absolute inset-0  z-0 "
+                style={{
+                  imageRendering: "optimizeQuality",
+                  backgroundSize: "cover",
+                  backgroundPosition: "top",
+                  backgroundImage: `url(${
+                    item.imageUrl || "https://picsum.photos/400/600"
+                  })`,
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75"></div>
+              </div>
+              <div className="absolute bottom-0 z-10 p-4">
+                <h2 className="text-lg font-bold">{item.title}</h2>
                 <p>{item.description}</p>
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
       {displayCount < portfolioItems.length && (
