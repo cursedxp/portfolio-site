@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="absolute z-10 top-4 left-4 flex items-center gap-4">
+      <div className="absolute z-50 top-4 left-4 flex items-center gap-4">
         <div className="flex flex-col">
           <span className="text-gray-600">
             Hi there, 👋 I am
@@ -45,7 +45,20 @@ export default function Header() {
             Frontend Developer/UX Designer
           </span>
         </div>
-        {/* Social icons or personal logos can be added here */}
+        <div className="flex gap-2">
+          <a href="https://www.linkedin.com/in/anil-ozsoy/" target="_blank">
+            <img
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              alt="Linkedin"
+            />
+          </a>
+          <a href="hhttps://github.com/anilozsoy" target="_blank">
+            <img
+              src="https://img.icons8.com/color/48/000000/github.png"
+              alt="github.com/cursedxp"
+            />
+          </a>
+        </div>
       </div>
       <nav
         ref={menuRef}
