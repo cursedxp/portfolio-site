@@ -2,7 +2,7 @@ import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion } from "framer-motion";
 export default function ContactMe() {
   return (
-    <div className="flex flex-col text-gray-800 items-center">
+    <section className="flex flex-col text-gray-800 items-center">
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500 text-center">
           What is next?
@@ -28,6 +28,6 @@ export default function ContactMe() {
           Say Hello
         </motion.a>
       </div>
-    </div>
+    </section>
   );
 }

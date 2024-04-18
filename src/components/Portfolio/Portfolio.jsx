@@ -46,7 +46,7 @@ export default function Portfolio({ id }) {
   ];
 
   return (
-    <div id={id} className="flex flex-col text-gray-800">
+    <section id={id} className="flex flex-col text-gray-800">
       <div className="p-6">
         <h3 className="text-sm font-bold text-fuchsia-500">Projects</h3>
         <RevealAnimation>
@@ -111,6 +111,6 @@ export default function Portfolio({ id }) {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }

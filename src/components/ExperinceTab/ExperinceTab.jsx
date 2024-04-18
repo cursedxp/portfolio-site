@@ -10,7 +10,7 @@ export default function ExperinceTab({ id }) {
   };
 
   return (
-    <div id={id} className="flex flex-col text-gray-800">
+    <section id={id} className="flex flex-col text-gray-800">
       <div className="flex flex-col p-6">
         <h3 className=" text-sm font-bold text-fuchsia-500">Experience</h3>
         <RevealAnimation>
@@ -207,6 +207,6 @@ export default function ExperinceTab({ id }) {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -13,7 +13,7 @@ export default function TechStack({ id }) {
   });
 
   return (
-    <div
+    <section
       id={id}
       className="flex xl:flex-row lg:flex-row md:flex-row xs:flex-col text-gray-800 my-20 xs:p-6 sm:p-8 md:p-0 lg:p-0"
     >
@@ -71,6 +71,6 @@ export default function TechStack({ id }) {
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

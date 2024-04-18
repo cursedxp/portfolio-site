@@ -13,7 +13,7 @@ export default function AboutMe({ id }) {
   });
 
   return (
-    <div
+    <section
       id={id}
       className="flex xl:flex-row  md:flex-row sm:flex-col xs:flex-col xl:p-4 sm:p-8 md:p-4 xs:p-6"
     >
@@ -62,6 +62,6 @@ export default function AboutMe({ id }) {
           technology to create impactful digital experiences.
         </p>
       </motion.div>
-    </div>
+    </section>
   );
 }
