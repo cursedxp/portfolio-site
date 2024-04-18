@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion, useAnimation, useInView } from "framer-motion";
-
+import TechBuble from "../TechBuble/TechBuble";
 export default function Portfolio({ id }) {
   const [displayCount, setDisplayCount] = useState(3);
   const ref = useRef();
@@ -20,15 +20,17 @@ export default function Portfolio({ id }) {
   const portfolioItems = [
     {
       title: "SmallFresh",
-      description: "Online shopping application",
+      description: "Fullstack online shopping application",
       url: "https://smallfresh.netlify.app/",
       imageUrl: "/smallfresh.netlify.app.png",
+      techStack: ["React", "TailwindCSS", "MongoDB", "Express", "Node"],
     },
     {
       title: "Single Page Developer Portfolio",
       description: "Visually appealing and responsive web application",
       url: "https://cursedxp.github.io/single-page-developer-portfolio/",
       imageUrl: "/cursedxp.github.io_single-page-developer-portfolio.png",
+      techStack: ["React", "TailwindCSS"],
     },
     {
       title: "Product feedback application",
@@ -36,12 +38,14 @@ export default function Portfolio({ id }) {
         "User-friendly responsive web app for streamlined feedback management.",
       url: "https://cursedxp.github.io/product-feedback-app/",
       imageUrl: "/cursedxp.github.io_product-feedback-app.png",
+      techStack: ["React", "Redux", "TailwindCSS"],
     },
     {
       title: "Jobs Board Application",
       description: "The Jobs Board Application is a responsive web platform",
       url: "https://cursedxp.github.io/devjobs-web-app/",
       imageUrl: "/cursedxp.github.io_devjobs-web-app.png",
+      techStack: ["React", "Redux", "TailwindCSS"],
     },
   ];
 
@@ -88,11 +92,17 @@ export default function Portfolio({ id }) {
                   })`,
                 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-75"></div>
               </div>
-              <div className="absolute bottom-0 z-10 p-4">
+              <div className="absolute bottom-0 z-50 p-4">
                 <h2 className="text-lg font-bold">{item.title}</h2>
-                <p>{item.description}</p>
+                <div></div>
+                <p className="mb-4">{item.description}</p>
+                <div className="flex gap-2 flex-wrap">
+                  {item.techStack.map((tech, index) => (
+                    <TechBuble key={index} tech={tech}></TechBuble>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.a>
