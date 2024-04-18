@@ -50,12 +50,16 @@ export default function Header() {
             <img
               src="https://img.icons8.com/color/48/000000/linkedin.png"
               alt="Linkedin"
+              width={48}
+              height={48}
             />
           </a>
           <a href="https://github.com/cursedxp" target="_blank">
             <img
               src="https://img.icons8.com/color/48/000000/github.png"
               alt="github.com/cursedxp"
+              width={48}
+              height={48}
             />
           </a>
         </div>
