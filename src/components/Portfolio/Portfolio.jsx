@@ -19,6 +19,13 @@ export default function Portfolio({ id }) {
 
   const portfolioItems = [
     {
+      title: "Hitmagnet",
+      description: "Youtube thumbnail comparison tool for content creators ",
+      url: "https://hitmagnet.app/",
+      imageUrl: "/hitmagnet.png",
+      techStack: ["React", "TailwindCSS", "NextJS", "Vercel", "Framer Motion"],
+    },
+    {
       title: "SmallFresh",
       description: "Fullstack online shopping application",
       url: "https://smallfresh.netlify.app/",

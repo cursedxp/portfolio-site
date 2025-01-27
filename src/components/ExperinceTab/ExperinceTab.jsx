@@ -119,6 +119,25 @@ export default function ExperinceTab({ id }) {
                 </p>
                 <ul className="flex flex-col list-disc px-4 gap-y-4">
                   <li>
+                    Designed and Developed a first saas hitmagnet.app where
+                    content creators can compare their youtube thumbnails before
+                    publishing. Test thumbnails and titles to maximize
+                    engagement and click-through rates.
+                  </li>
+                  <li>
+                    Developed a chrome extension for content creators download
+                    youtube thumbnails and save them to their hitmagnet
+                    collections.
+                  </li>
+                  <li>
+                    Developed decojoy.com where users can create their own home
+                    design collections and share them with others.
+                  </li>
+                  <li>
+                    Developed a responsive e-commerce website for a local
+                    business, increasing online sales by 20% in 3 months
+                  </li>
+                  <li>
                     Transitioned from UX Design to Fullstack Dev in 6-month
                     Ironhack bootcamp. Mastered JS, HTML, CSS, React, Node.js,
                     Express.js, MongoDB, with hands-on projects.
