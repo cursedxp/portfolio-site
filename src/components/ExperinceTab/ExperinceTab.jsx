@@ -119,36 +119,24 @@ export default function ExperinceTab({ id }) {
                 </p>
                 <ul className="flex flex-col list-disc px-4 gap-y-4">
                   <li>
-                    Designed and Developed a first saas hitmagnet.app where
-                    content creators can compare their youtube thumbnails before
-                    publishing. Test thumbnails and titles to maximize
-                    engagement and click-through rates.
+                    Founded and launched HitMagnet, a YouTube thumbnail analysis
+                    platform with a web app and Chrome extension, integrating
+                    Google Authentication & Stripe.
                   </li>
                   <li>
-                    Developed a chrome extension for content creators download
-                    youtube thumbnails and save them to their hitmagnet
-                    collections.
+                    Developed DecoJoy, an AI-powered interior design tool that
+                    identifies design elements in AI-generated interiors and
+                    suggests real-world purchase options, leveraging Next.js,
+                    Node.js, MongoDB, and Google Vision API.
                   </li>
                   <li>
-                    Developed decojoy.com where users can create their own home
-                    design collections and share them with others.
+                    Paused development briefly to attend a German language
+                    course, enhancing adaptability and communication skills.
                   </li>
                   <li>
-                    Developed a responsive e-commerce website for a local
-                    business, increasing online sales by 20% in 3 months
-                  </li>
-                  <li>
-                    Transitioned from UX Design to Fullstack Dev in 6-month
-                    Ironhack bootcamp. Mastered JS, HTML, CSS, React, Node.js,
-                    Express.js, MongoDB, with hands-on projects.
-                  </li>
-                  <li>
-                    Integrated Redux in 2 projects, showcasing analysis and
-                    cooperation in existing infrastructures in 3 months
-                  </li>
-                  <li>
-                    Developed JavaScript backend infrastructure with Nodejs and
-                    Express.js, reducing development time by 25% in 2 weeks
+                    Transitioned from UX Design to Fullstack Development through
+                    a 6-month Ironhack bootcamp, mastering JavaScript, React,
+                    Node.js, and MongoDB.
                   </li>
                 </ul>
               </div>
