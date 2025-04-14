@@ -130,10 +130,6 @@ export default function ExperinceTab({ id }) {
                     Node.js, MongoDB, and Google Vision API.
                   </li>
                   <li>
-                    Paused development briefly to attend a German language
-                    course, enhancing adaptability and communication skills.
-                  </li>
-                  <li>
                     Transitioned from UX Design to Fullstack Development through
                     a 6-month Ironhack bootcamp, mastering JavaScript, React,
                     Node.js, and MongoDB.

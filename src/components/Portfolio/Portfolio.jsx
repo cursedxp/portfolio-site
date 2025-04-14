@@ -19,6 +19,14 @@ export default function Portfolio({ id }) {
 
   const portfolioItems = [
     {
+      title: "ThoughtLink",
+      description:
+        "A digital solutions company website showcasing services, pricing, and insights for business technology solutions",
+      url: "https://thoughtlink.vercel.app/",
+      imageUrl: "/thoughtlink.vercel.app.png",
+      techStack: ["React", "TailwindCSS", "NextJS", "Vercel", "Framer Motion"],
+    },
+    {
       title: "Hitmagnet",
       description: "Youtube thumbnail comparison tool for content creators ",
       url: "https://hitmagnet.app/",
