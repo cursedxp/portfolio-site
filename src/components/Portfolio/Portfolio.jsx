@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
 import RevealAnimation from "../RevealAnimation/RevealAnimation";
 import { motion, useAnimation, useInView } from "framer-motion";
 import TechBuble from "../TechBuble/TechBuble";
@@ -19,10 +20,17 @@ export default function Portfolio({ id }) {
 
   const portfolioItems = [
     {
-      title: "ThoughtLink",
+      title: "Optimotion",
+      description: "Boutique development studio specializing in custom web applications, API integrations, and workflow automation for growing businesses",
+      url: "https://www.optimotion.dev/",
+      imageUrl: "/www.optimotion.dev_.png",
+      techStack: ["React", "NextJS", "TypeScript", "TailwindCSS", "Framer"],
+    },
+    {
+      title: "Automatics",
       description:
         "A digital solutions company website showcasing services, pricing, and insights for business technology solutions",
-      url: "https://thoughtlink.vercel.app/",
+      url: "https://www.automatics.dev/",
       imageUrl: "/thoughtlink.vercel.app.png",
       techStack: ["React", "TailwindCSS", "NextJS", "Vercel", "Framer Motion"],
     },
@@ -139,3 +147,7 @@ export default function Portfolio({ id }) {
     </section>
   );
 }
+
+Portfolio.propTypes = {
+  id: PropTypes.string.isRequired,
+};
